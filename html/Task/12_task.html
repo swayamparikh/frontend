@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="sample.html" method="post" align="center">
+        <caption>
+            <h1>Membership Application</h1>
+            <h4>To apply for membership please complete all question</h4>
+        </caption>
+        <hr width="70%" size="1" align="center" color="black">
+        <table align="center">
+            <tr>
+                <th rowspan="2" align="left"><label for="name">Name</label></th>
+                <td><input type="text" pattern="[A-Za-z]+" name="name" required></td>
+                <td><input type="text" pattern="[A-Za-z]+" name="name" required></td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <font size="2">first name</font>
+                </td>
+                <td align="left">
+                    <font size="2">last name</font>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th align="left" rowspan="8"><label for="address">Address</label></th>
+                <td><input type="text" pattern="[A-Z0-9a-z]+" name="address" required></td>
+            </tr>
+            <tr>
+                <td align="left" colspan="2">
+                    <font size="2">Address line 1</font>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" pattern="[A-Z0-9a-z]+" name="address" required></td>
+            </tr>
+            <tr>
+                <td align="left" colspan="2">
+                    <font size="2">Address line 2</font>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" pattern="[A-Za-z]+"></td>
+                <td><input type="text" pattern="[123456789]+[0-9]+" maxlength="6" required></td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <font size="2">City</font>
+                </td>
+                <td align="left">
+                    <font size="2">Pincode</font>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" pattern="[123456789]+[0-9]+" maxlength="6" required></td>
+                <td align="left"><select name="" id="" country>
+                        <option value="">---Please Select---</option>
+                        <option value="">india</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <font size="2">Postal/Zip code</font>
+                </td>
+                <td align="left">
+                    <font size="2">Country</font>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th align="left"><label for="">Email</label></th>
+                <td><input type="email" placeholder="ex:myname@gmail.com"
+                        pattern="[a-z0-9#.*]+'@'+[a-z]+''.'+[a-z]{2,3}$+" required></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th align="left" rowspan="2"><label for="">Home Number</label></th>
+                <td><input type="text" pattern="[123456789]+[0-9]+" maxlength="6" required></td>
+                <td><input type="tel" pattern="[6789][0-9]{9}" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <font size="2">Area code</font>
+                </td>
+                <td align="left">
+                    <font size="2">Phone number</font>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th align="left" rowspan="2"><label for="">Cellular Number</label></th>
+                <td><input type="text" pattern="[123456789]+[0-9]+" maxlength="6" required></td>
+                <td><input type="tel" pattern="[6789][0-9]{9}" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <font size="2">Area code</font>
+                </td>
+                <td align="left">
+                    <font size="2">Phone number</font>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th align="left" rowspan="2"><label for="">Work Number</label></th>
+                <td><input type="text" pattern="[123456789]+[0-9]+" maxlength="6" required></td>
+                <td><input type="tel" pattern="[6789][0-9]{9}" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <font size="2">Area code</font>
+                </td>
+                <td align="left">
+                    <font size="2">Phone number</font>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th align="left"><label for="">Website</label></th>
+                <td colspan="2" align="left"><input type="text" pattern="[https://.*]+" required></td>
+            </tr>
+            <tr>
+                <td><button>submit</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

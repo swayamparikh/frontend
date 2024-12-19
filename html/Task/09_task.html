@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  action="sample.html" method="post">
+        
+        <table align="center" border="0">
+            
+            <caption align="center"><h1>Sign up</h1></caption>
+            <tr>
+                <td><label for="">First,Last Name<label></td>
+                    <td><input type="hidden" >
+                    <textarea rows="1" cols="25" placeholder="" required></textarea>
+                    <textarea rows="1" cols="25" placeholder="" required></textarea>
+                    </td>
+            </tr>
+            <tr>
+                <td><label for="">Organization</label></td>
+                <td><input type="hidden" >
+                <textarea rows="1" cols="50" placeholder=""required></textarea> 
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Email address</label></td>
+                <td><input type="hidden" >
+                <textarea rows="1" cols="50"  pattern="[a-z0-9#.*]+'@'+[a-z]+''.'+[a-z]{2,3}$+" placeholder="" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Work Phone</label></td>
+                <td><input type="hidden" >
+                <textarea rows="1" cols="40"  pattern="[0-9]+" minlength="1" maxlength="10" placeholder="" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Home Phone</label></td>
+                <td><input type="hidden" >
+                <textarea rows="1" cols="40"  pattern="[0-9]+"minlength="1" maxlength="10" placeholder="" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Cell Phone</label></td>
+                <td><input type="hidden" >
+                <textarea rows="1" cols="40" pattern="[0-9]+"minlength="1" maxlength="10"" placeholder="" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Fax</label></td>
+                <td><input type="hidden" >
+                <textarea rows="1" cols="40"  pattern="[0-9]+"placeholder="" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Address 1</label></td>
+                <td><input type="hidden" >
+                <textarea rows="1" cols="55" pattern="[A-Z0-9a-z]+" placeholder="" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Address 2</label></td>
+                <td><input type="hidden" >
+                <textarea rows="1" cols="55" pattern="[A-Z0-9a-z]+" placeholder="" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">City<label></td>
+                <td><input type="hidden" >
+                <textarea rows="1" cols="45"pattern="[A-Za-z]+" placeholder="" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                    <td><label for="">State Province<label></td>
+                    <td><input type="hidden" >
+                    <textarea rows="1" cols="45" pattern="[A-Za-z]+" placeholder="" required></textarea>
+                    </td>
+            </tr>
+            <tr>
+                <td><label for="">Postal Code<label></td>
+                    <td><input type="hidden" >
+                    <textarea rows="1" cols="20"pattern="[0-9]+" minlength="1" maxlength="6"placeholder="" required></textarea>
+                    </td>
+            </tr>
+            <tr>
+                <td><label for="">Country<label></td>
+                    <td><input type="hidden" >
+                    <textarea rows="1" cols="50"pattern="[A-Za-z]+" placeholder="" required></textarea>
+                    </td>
+            </tr>
+            <tr>
+                <td align="center"><input type="submit" value="submit"></td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>
