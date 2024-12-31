@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name">Enter Your Full Name</label>
+        <input type="text" placeholder="name" title="name"  pattern="[a-zA-Z]{4,8}" value="" minlength="5" maxlength="15" required><br><br>
+
+        <label for="email">Enter Your email</label>
+        <input type="email" placeholder="email" title="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" value=""><br><br>
+
+        <label for="name">Enter Your Phone Number</label>
+        <input type="tel" placeholder="telephone" title="tel" value="" pattern="[0-9]{10}"minlength="10" maxlength="10" required><br><br>
+
+        <label for="name">Enter Your Message</label>
+        <input type="hidden" >
+        <textarea rows="11" cols="200" placeholder=""  pattern="[a-zA-Z]{4,8}"></textarea> <br><br>
+
+        <label for="subject">Enter the subjects</label><br>
+        <select name="" id="">
+
+            <option value="">ss</option>
+            <option value="">science</option>
+            <option value="">physics</option>
+            <option value="">economics</option> 
+            <option value="">bio</option>
+        </select><br><br>
+
+        <input type="button" value="submit">
+    </form>
+</body>
+</html>
