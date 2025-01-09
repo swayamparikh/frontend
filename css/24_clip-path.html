@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tri{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral;
+            /* clip-path: circle(50%); */
+            /* clip-path: polygon(x y,x y,x y); */
+            clip-path: polygon(50% 0%,100% 100%,0% 100%);
+        }
+
+        .hex{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(126, 173, 15);
+            margin-top: 20px;
+            clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+        }
+
+            .pent{
+                height: 200px;
+            width: 200px;
+            background-color: rgb(69, 17, 138);
+            margin-top: 20px;
+            clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="tri">
+
+    </div>
+    <div class="hex"></div>
+    <div class="pent"></div>
+</body>
+</html>
