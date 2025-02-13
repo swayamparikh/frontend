@@ -1,0 +1,39 @@
+@media only screen and (max-width:1140px) {}
+
+@media only screen and (max-width:992px) {}
+
+@media only screen and (max-width:768px) {
+
+    .meals-content .row {
+        display: block;
+    }
+
+    .meals-content .row .col {
+        width: 100%;
+    }
+
+    .navlist {
+        display: none;
+    }
+    .meal-h1{
+        text-align: center;
+        width: 100%;
+    }
+    .meal-content .meal-p{
+       width: 80%; 
+    }
+    #Favorites .row {
+        flex-direction: column;
+        /* display: block; */
+    }
+    #Favorites .row .col{
+        width: 80%;
+        margin: 20px auto;
+    }
+
+
+}
+
+@media only screen and (max-width:576px) {
+   
+}

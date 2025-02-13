@@ -1,0 +1,76 @@
+<!-- CSS Box Model -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<style>
+    .profile-card {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  border: 2px solid #ddd;
+  box-sizing: border-box; 
+}
+
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  padding: 5px;
+  object-fit: cover;
+  box-sizing: content-box; 
+}
+
+
+.profile-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.profile-bio {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+
+.follow-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+ 
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.follow-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+</style>
+<body>
+
+    <div class="profile-card">
+        <img src="profile.jpg" alt="User Profile" class="profile-pic">
+        <h2 class="profile-name">Swayam</h2>
+        <p class="profile-bio">Web Developer | Tech Enthusiast | Music Lover</p>
+        <button class="follow-btn">Follow</button>
+    </div>
+
+</body>
+</html>

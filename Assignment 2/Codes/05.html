@@ -1,0 +1,449 @@
+<!-- CSS Flexbox -->
+<!-- Responsive Web Design with Media Queries -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mealplans</title>
+    <link rel="stylesheet" href="/frontend/MealPlan/css/media.css">
+   
+</head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utiltes */
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+#header {
+    background-color: #ffece1;
+
+}
+
+.box-shdow {
+    box-shadow: 0px 1px 17px rgba(146, 127, 116, 0.21);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navbar .logo {
+    width: 60px;
+}
+
+.navlist .list {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nava {
+    text-decoration: none;
+    font-size: 19px;
+    line-height: 59px;
+    color: #649483;
+    font-weight: 400;
+    font-family: "Clear Sans";
+}
+
+.btn-meal {
+
+    border-radius: 10px;
+    background-color: #649483;
+    padding: 10px 20px;
+    border: none;
+    font-size: 19px;
+    color: #ffece1;
+    font-weight: 700;
+    font-family: "Clear Sans";
+    text-align: center;
+
+}
+
+.navicon i {
+    margin-left: 10px;
+}
+
+.meals-content {
+    padding: 20px 0 30px 40px;
+}
+
+.meals-content .row {
+    display: flex;
+    /* align-items: center; */
+}
+
+.meals-content .row .col {
+    width: 50%;
+}
+
+.meal-img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.meal-content {
+    color: #649483;
+    font-family: "Clear Sans";
+    text-align: center;
+}
+
+.meal-content .meal-h5 {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.meal-content .meal-p {
+    font-size: 16px;
+    font-weight: 400;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.meal-h1 {
+    font-size: 80px;
+    /* min 20px,7.5vw, max 21 > 79 */
+    font-size: clamp(20px, 7.5vw, 80px);
+    width: 85%;
+    color: #dd7017;
+    font-weight: 700;
+    font-family: "Clear Sans";
+}
+
+.btn-jan {
+    border: none;
+    border-radius: 14px;
+    background-color: #649483;
+    font-size: clamp(16px, 2.5vw, 19px);
+    color: #fff4ee;
+    font-weight: 700;
+    font-family: "Clear Sans";
+    padding: 10px 20px;
+}
+
+.btn-lern {
+    font-size: clamp(16px, 2.5vw, 19px);
+    color: #649483;
+    font-weight: 700;
+    font-family: "Clear Sans";
+    border: 2px solid #649483;
+    padding: 10px 20px;
+    border-radius: 14px;
+}
+
+#Favorites {
+    background-color: #649483;
+    padding: 70px 0;
+}
+
+.our-content {
+    font-family: "Clear Sans";
+    color: #ffece1;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.our-content .our-h2 {
+    font-size: 112px;
+    font-size: clamp(20px, 8.6vw, 112px);
+}
+
+.our-content .our-p {
+    font-size: clamp(16px, 2.5vw, 19px);
+}
+
+#Favorites .row {
+    display: flex;
+    column-gap: 20px;
+}
+
+#Favorites .row .col {
+    width: 33.33%;
+
+}
+
+.card {
+    text-align: center;
+    background-color: #ffece1;
+    font-family: "Clear Sans";
+    color: #649483;
+    border-radius: 30px;
+    padding: 30px 0;
+}
+
+.card .card-h4 {
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.card .img {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.card .card-p {
+    font-size: 19px;
+    font-weight: 400;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* footer */
+#foot {
+    padding: 40px 0;
+    background: #649483;
+    /* border: 2px solid; */
+}
+
+#foot .row {
+    display: flex;
+}
+
+#foot .row .col-60 {
+    width: 60%;
+    /* border: 2px solid; */
+}
+
+#foot .row .col-60 .col {
+    width: 33.33%;
+    padding: 30px 0;
+}
+
+#foot .row .col-40 {
+    width: 40%;
+    /* border: 2px solid; */
+    padding: 30px 0;
+}
+
+.foot-h4 {
+    font-size: 25px;
+    color: #ffece1;
+    font-weight: 700;
+    font-family: "Clear Sans";
+}
+
+.foot-ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.foot-ul .foot-li{
+    margin: 10px 0;
+}
+.foot-ul .foot-li .foot-a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #ffece1;
+    font-weight: 400;
+    font-family: "Clear Sans";
+}
+.foot-p{
+    font-size: 19px;
+ 
+    color: #ffece1;
+    font-weight: 400;
+    font-family: "Clear Sans";
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+    </style>
+<body>
+
+    <!-- header start -->
+    <header id="header">
+        <div class="box-shdow">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="/frontend/MealPlan/Images/Logo.png" height="100%" width="100%" alt="">
+                    </div>
+                    <ul class="navlist">
+                        <li class="list"><a href="" class="nava">Home</a></li>
+                        <li class="list"><a href="" class="nava">About</a></li>
+                        <li class="list"><a href="" class="nava">Shop</a></li>
+                        <li class="list"><a href="" class="nava">Contact Us </a></li>
+                    </ul>
+                    <div class="navicon">
+                        <button class="btn-meal">Order your Meal</button>
+                        <i class="fa-solid fa-magnifying-glass nava"></i>
+                        <i class="fa-solid fa-cart-shopping nava"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="meals-content">
+            <div class="row">
+                <div class="col">
+                    <div class="meal-img">
+                        <img src="/frontend/MealPlan/Images/card.png" height="100%" width="100%" alt="">
+                    </div>
+                    <div class="meal-content">
+                        <h5 class="meal-h5">SMOKED MILKFISH GARDEN SALAD</h5>
+                        <p class="meal-p">Includes: Vegetable Lasagna, Fresh Fruit Platter, Fresh Lemon Juice, and Creme
+                            Brulee </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h1 class="meal-h1">Worry-Free Meal Plans.</h1>
+                    <button class="btn-jan">START YOUR JOURNEY</button>
+                    <button class="btn-lern">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- header end -->
+
+
+    <section id="Favorites">
+        <div class="container">
+            <div class="our-content">
+                <h2 class="our-h2">Our Favorites</h2>
+                <p class="our-p">MEALS THAT OUR CUSTOMERS ENJOY</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <h4 class="card-h4">Pomegranate
+                            Glazed Salmon</h4>
+                        <div class="img">
+                            <img src="/frontend/MealPlan/Images/card1.png" height="100%" width="100%" alt="">
+                        </div>
+                        <p class="card-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <h4 class="card-h4">pomegranate pear
+                            green salad</h4>
+                        <div class="img">
+                            <img src="/frontend/MealPlan/Images/card2.png" height="100%" width="100%" alt="">
+                        </div>
+                        <p class="card-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <h4 class="card-h4">chef’s signature
+                            meal plan</h4>
+                        <div class="img">
+                            <img src="/frontend/MealPlan/Images/card3.png" height="100%" width="100%" alt="">
+                        </div>
+                        <p class="card-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-60">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="foot-h4">
+                                OUR SERVICES
+                            </h4>
+                            <ul class="foot-ul">
+                                <li class="foot-li"><a href="" class="foot-a">What’s New</a></li>
+                                <li class="foot-li">
+                                    <a href="" class="foot-a"> How to Order
+                                    </a>
+                                </li>
+                                <li class="foot-li">
+                                    <a href="" class="foot-a"> Payment Method
+                                    </a>
+                                </li>
+                                <li class="foot-li">
+                                    <a href="" class="foot-a">Order Status
+                                    </a>
+                                </li>
+                                <li class="foot-li">
+                                    <a href="" class="foot-a"> Subscription
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h4 class="foot-h4">
+                                OUR TEAM
+                            </h4>
+                            <ul class="foot-ul">
+                                <li class="foot-li"><a href="" class="foot-a">Our Local Farms
+                                    </a></li>
+                                <li class="foot-li">
+                                    <a href="" class="foot-a"> Craftsmanship
+
+                                    </a>
+                                </li>
+                                <li class="foot-li">
+                                    <a href="" class="foot-a"> Our Sources
+
+                                    </a>
+                                </li>
+                                <li class="foot-li">
+                                    <a href="" class="foot-a"> Sustainability
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h4 class="foot-h4">
+                                LEGAL
+                            </h4>
+                            <ul class="foot-ul">
+                                <li class="foot-li"><a href="" class="foot-a">Privacy Policy
+                                    </a></li>
+                                <li class="foot-li">
+                                    <a href="" class="foot-a">Our Promise
+                                    </a>
+                                </li>
+                                <li class="foot-li">
+                                    <a href="" class="foot-a">More Information
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-40">
+                    <h4 class="foot-h4">
+                        JOIN OUR NEWSLETTER
+                    </h4>
+                    <p class="foot-p">Get the latest updates on our meals.</p>
+                </div>
+            </div>
+            <div class="main">
+                <div class="col">
+                    <p class="foot-p">Copyright 2021 Chef Norman Meals Co. All Rights Reserved.</p>
+                </div>
+                <div class="col">2</div>
+            </div>
+        </div>
+
+      
+    </footer>
+
+</body>
+
+</html>
