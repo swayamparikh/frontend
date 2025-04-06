@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Fruits Array</title>
+    
+</head>
+<body>
+
+    <h2>Modify Fruits Array</h2>
+
+    <button onclick="addFruit()">Add a Fruit</button>
+    <button onclick="removeFirstFruit()">Remove First Fruit</button>
+
+    <div class="output" id="output"></div>
+
+    <script>
+        let fruits = ["apple", "banana", "cherry"];
+        
+        function updateDisplay() {
+            document.getElementById("output").innerHTML = "Array: " + JSON.stringify(fruits);
+        }
+
+        function addFruit() {
+            fruits.push("orange"); 
+            updateDisplay();
+        }
+
+        function removeFirstFruit() {
+            if (fruits.length > 0) {
+                fruits.shift(); 
+            }
+            updateDisplay();
+        }
+
+       
+        updateDisplay();
+    </script>
+
+</body>
+</html>
