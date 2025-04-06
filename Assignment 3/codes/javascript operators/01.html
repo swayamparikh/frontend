@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operations</title>
+   
+</head>
+<body>
+
+    <h2>JavaScript Operations</h2>
+
+    <label>Enter First Number:</label>
+    <input type="number" id="num1"><br>
+
+    <label>Enter Second Number:</label>
+    <input type="number" id="num2"><br>
+
+    <button onclick="performOperations()">Calculate</button>
+
+    <div class="output" id="output"></div>
+
+    <script>
+        function performOperations() {
+            let a = parseFloat(document.getElementById("num1").value);
+            let b = parseFloat(document.getElementById("num2").value);
+
+            if (isNaN(a) || isNaN(b)) {
+                document.getElementById("output").innerHTML = "Please enter valid numbers.";
+                return;
+            }
+
+            
+            let addition = a + b;
+            let subtraction = a - b;
+            let multiplication = a * b;
+           
+           
+            let isEqual = a === b ? "Yes" : "No";
+            let isGreater = a > b ? "Yes" : "No";
+
+           
+            let condition1 = a > 10; 
+            let condition2 = b < 5;   
+            let bothConditions = condition1 && condition2 ? "True" : "False";
+            let eitherCondition = condition1 || condition2 ? "True" : "False";
+
+            document.getElementById("output").innerHTML = `
+                <p>Addition: ${addition}</p>
+                <p>Subtraction: ${subtraction}</p>
+                <p>Multiplication: ${multiplication}</p>
+                <p>Division: ${division}</p>
+                <p>Are the numbers equal? ${isEqual}</p>
+                <p>Is the first number greater? ${isGreater}</p>
+                <p>Both conditions (a > 10 AND b < 5) are true: ${bothConditions}</p>
+                <p>At least one condition (a > 10 OR b < 5) is true: ${eitherCondition}</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>

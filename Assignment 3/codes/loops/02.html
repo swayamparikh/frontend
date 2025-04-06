@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Even Numbers</title>
+    
+</head>
+<body>
+
+    <h2>Sum of Even Numbers Between 1 and 20</h2>
+
+    <button onclick="calculateSum()">Calculate Sum</button>
+
+    <div class="output" id="output"></div>
+
+    <script>
+        function calculateSum() {
+            let sum = 0;
+            let num = 2; 
+
+            while (num <= 20) {
+                sum += num; 
+                num += 2; 
+            }
+
+            document.getElementById("output").innerHTML = "The sum of even numbers between 1 and 20 is: " + sum;
+        }
+    </script>
+
+</body>
+</html>
