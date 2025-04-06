@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divide by Zero Handling</title>
+    
+</head>
+<body>
+
+    <h2>Divide Two Numbers</h2>
+    <input type="number" id="num1" placeholder="Enter number 1">
+    <input type="number" id="num2" placeholder="Enter number 2">
+    <button onclick="performDivision()">Divide</button>
+    
+    <div class="output" id="output"></div>
+
+    <script>
+        function performDivision() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let output = document.getElementById("output");
+
+            try {
+                if (isNaN(num1) || isNaN(num2)) {
+                    throw new Error("Please enter valid numbers.");
+                }
+                if (num2 === 0) {
+                    throw new Error("Division by zero is not allowed.");
+                }
+                let result = num1 / num2;
+                output.style.color = "green";
+                output.innerHTML = `Result: ${result}`;
+            } catch (error) {
+                output.style.color = "red";
+                output.innerHTML = `Error: ${error.message}`;
+            }
+        }
+    </script>
+
+</body>
+</html>

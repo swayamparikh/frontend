@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .addc{
+            background: linear-gradient(red,blue,green);
+            padding: 50px;
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Hello javscript classlist</h1>
+    <br> <br>
+    <button onclick="addcss()">Add css</button>
+    <button onclick="removecss()">Remove css</button>
+
+    <button onclick="togglecss()">Toggle css</button>
+
+    <script>
+        let h1_tag = document.getElementById("h1")
+      
+         function addcss(){
+               h1_tag.classList.add("addc")
+               console.log("add css")
+         }
+
+         function removecss(){
+            h1_tag.classList.remove("addc")
+            console.log("remove css")
+         }
+
+         function togglecss(){
+            h1_tag.classList.toggle("addc")
+            console.log("toggle css")
+         }
+
+    </script>
+</body>
+</html>

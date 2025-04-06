@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+           
+            height: 100px;
+            margin: 10px auto;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            height: 40px;
+            width: 100px;
+            background-color: aqua;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+            margin: 0 auto;
+            /* overflow: hidden; */
+        }
+
+        .border {
+            height: 45px;
+            width: 105px;
+            position: absolute;
+            border: 5px solid aqua;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover .border {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Shop now
+        <div class="border"></div>
+    </div>
+</body>
+
+</html>

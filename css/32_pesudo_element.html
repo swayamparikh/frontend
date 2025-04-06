@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li::first-letter {
+            background-color: red;
+        }
+        .main::first-line{
+            background-color: lightcoral;
+        }
+        .main::selection{
+            background-color: black;
+            color: white;
+        }
+        ul li::before{
+            content: "ssad";
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+        }
+        ul li::after{
+            /* content: url(); */
+            content: "sg";
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+    </ul>
+
+    <div class="main">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed debitis iusto exercitationem voluptates,
+        maiores ut expedita provident at. Voluptas, aliquam non similique enim dolores nam consequuntur voluptates neque
+        esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio provident earum nisi similique tempore
+        quia nobis esse perspiciatis atque sequi, dignissimos veniam, ea velit, quasi rerum sit adipisci iste
+        voluptatibus!
+    </div>
+</body>
+
+</html>

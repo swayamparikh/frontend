@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form action="#">
+        Enter Email :
+        <!-- onkeyup = "return check_email_ex()" -->
+        <input type="text" name="" id="mail"  onblur="return check_email_ex()">
+        <span id="msg1"></span>
+        <br><br>
+
+        Enter Name :
+        <input type="text" name="" id="name"  onblur="return check_name_ex()">
+        <span id="msg2"></span>
+        <br><br>
+
+        Enter phone :
+        <input type="tel" name="" id="num"  onblur="return check_name_ex()">
+        <span id="msg3"></span>
+        <br><br>
+
+        <button type="submit" onclick="return check_blank()">Check Email</button>
+    </form>
+    <script>
+        
+        function check_blank() {
+            let mail = document.getElementById("mail").value;
+            let name = document.getElementById("name").value;
+            if (mail == "") {
+                document.getElementById("msg1").innerHTML = "Enter Email"
+                return false
+            }
+
+            
+            else {
+                
+                // let name = document.getElementById("name").value;
+                document.getElementById("msg2").innerHTML = "Enter Name"
+                return false
+            }
+
+            // else if(num == ""){
+            //     // let num = document.getElementById("num").value;
+            //     document.getElementById("msg3").innerHTML = "Enter telephone number"
+            //     return false
+            // }
+          
+        }
+        // for regular expression used w3resource website
+        function check_email_ex() {
+            let mail = document.getElementById("mail").value;
+            // let name = document.getElementById("name").value;
+
+            let reg_ex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            // let reg_ex2 = "^[\p{L}\p{M} \-\.',]*$"
+
+            if (reg_ex.test(mail)) {
+                document.getElementById("msg1").innerHTML = "";
+                return false
+            }
+            // else if (reg_ex2.test(name)) {
+            //     document.getElementById("msg2").innerHTML = "";
+            //     return false
+            // }
+            else {
+                document.getElementById("msg1").innerHTML = "Enter valid email address";
+                // document.getElementById("msg2").innerHTML = "Enter valid name";
+                return false
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child{
+            background-color: red;
+        }
+        ul li:last-child{
+            background-color: blue;
+        }
+        /* top start */
+        ul li:nth-child(5){
+            background-color: green;
+        }
+        ul li:nth-last-child(3){
+            background-color: lightcoral;
+        }
+        ul li:nth-child(even){
+            background-color: blue;
+        }
+        ul li:nth-child(odd){
+            background-color: rgb(168, 230, 26);
+        }
+        .main{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            transition: 1s;
+        }
+        .main:hover{
+            background-color: lightcoral;
+            border-radius: 50%;
+            transform: translate(100px);
+        }
+        input{
+            margin-top:50px ;
+            border: none;
+        }
+        input:focus{
+            background-color: red;
+            color: aqua;
+            outline: 5px solid green;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- seletor -->
+    <!-- pesudo class  :-  (:) :- old data 
+    pesudo element :- (::) :- new data -->
+
+    <!-- hover :- Effect -->
+     <!-- 1) oiginal div  -->
+      <!-- 2) originla child div  -->
+       <!-- 3) child prenet div not work -->
+
+    <ul>
+        <li>One</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>Five</li>
+        <li>six</li>
+        <li>seven</li>
+        <li>eight</li>
+    </ul>
+
+    <div class="main">
+
+    </div>
+
+    <input type="text" placeholder="Enter your name">
+</body>
+</html>

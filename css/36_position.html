@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 1000px;
+            background-color: orange;
+            display: flex;
+            border: 2px solid;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+        }
+        /* #box1{
+            position: static;
+            top: 100px;
+            bottom: 50px;
+            left: 50px;
+            right: 60px;
+        } */
+         /* #box2{
+            position: fixed;
+            top: 50%;
+            bottom: 50px;
+            right: 50%;
+            top: 0;
+            left: 0;
+         } */
+          /* #box3{
+            position: sticky;
+            top: 20px;
+            bottom: 0;
+          } */
+           #box4{
+            position: relative;
+            /* top: 50px;
+            left: 50px; */
+           }
+           #box5{
+            position: relative;
+           }
+           .box1{
+            height: 25px;
+            width: 25px;
+            background-color: lawngreen;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+           }
+           .box2{
+            height: 25px;
+            width: 25px;
+            background-color: rgb(28, 97, 88);
+            position: absolute;
+            /* top: 25px; */
+            /* left: 25px; */
+            /* top: 100%; */
+            /* left: 100%; */
+           }
+    </style>
+</head>
+<body>
+    <!-- position :-  move data -->
+     <!-- type of 5 
+     1) static :- by defualt :- top, bottom ,left ,right (px,em.rem,%)
+     2) Fixed :- work body tag :-  top, bottom ,left ,right (px,em.rem,%)
+     3) stikey :- paticulre div section :-  top, bottom ,left ,right (px,em.rem,%)
+     4) relative (prenet) :- top, bottom ,left ,right (px,em.rem,%) not use in :- depened on chaild 
+     5) absulate (chaild) :- depened prenet div :- top, bottom ,left ,right (px,em.rem,%) -->
+    
+
+     <div class="main">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">
+            <div class="box1">5</div>
+            <div class="box2">5</div>
+        </div>
+        <div class="box">6</div>
+     </div>
+     <div class="main">
+
+     </div>
+
+     <div class="main">
+
+     </div>
+</body>
+</html>

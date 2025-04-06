@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Array Elements</title>
+   
+</head>
+<body>
+
+    <h2>Sum of Array Elements</h2>
+
+    <input type="text" id="numbers" placeholder="Enter numbers separated by commas">
+    <button onclick="calculateSum()">Calculate Sum</button>
+
+    <div class="output" id="output"></div>
+
+    <script>
+        function sumArray(numbers) {
+            return numbers.reduce((acc, num) => acc + num, 0);
+        }
+
+        function calculateSum() {
+            let input = document.getElementById("numbers").value;
+            let numArray = input.split(",").map(num => parseFloat(num.trim()));
+
+            if (numArray.some(isNaN)) {
+                document.getElementById("output").innerHTML = "Please enter valid numbers!";
+            } else {
+                let sum = sumArray(numArray);
+                document.getElementById("output").innerHTML = "Sum of numbers: " + sum;
+            }
+        }
+    </script>
+
+</body>
+</html>

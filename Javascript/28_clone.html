@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" onkeypress="senddata()" placeholder="Enter your data" id="inp"> -->
+    <input type="text" onkeyup="senddata()" placeholder="Enter your data" id="inp">
+
+
+    <textarea name="" id="texta" rows="10" cols="30"></textarea>
+
+    <button onclick="senddata()">send data</button>
+
+    <script>
+
+        let inpu_tag = document.getElementById("inp");
+        let texta = document.getElementById("texta")
+
+        function senddata(){
+              console.log("send data");
+              texta.innerHTML = inpu_tag.value
+        }
+    </script>
+
+</body>
+</html>

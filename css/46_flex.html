@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 500px;
+            background-color: orange;
+            display: flex;
+            /* row or col */
+            flex-direction: row;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            justify-content: center;
+            /* justify-content: right; */
+            /* align-items: end; */
+            align-items: center;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+        }
+        #box1{
+            align-content: center;
+            text-align: center;
+        }
+        .main2{
+            height: 300px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <!-- layout :- two type 1) flex 2)grid -->
+     <!-- flex :- at time row or col  -->
+      <!-- width count layout  flex perent div apply work child  -->
+    <div class="main">
+        <div class="box">1</div>
+        <div class="box" id="box1">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <div class="main2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utiltes */
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+#header {
+    background-color: #090706;
+
+
+}
+
+.box-shdow {
+    box-shadow: 0px 1px 17px rgba(146, 127, 116, 0.21);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.navbar .logo {
+    width: 100px;
+}
+
+.navlist .list {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+
+}
+
+.nava {
+    text-decoration: none;
+    font-size: 19px;
+    line-height: 59px;
+    color: white;
+    font-weight: 400;
+    font-family: "Clear Sans";
+
+}
+
+
+
+.navicon i {
+    width: 200px;
+    margin-left: 10px;
+    color: white;
+
+}
+
+/* #main {
+    position: relative;
+    
+
+}
+
+
+.foodimg {
+    border: 2px solid;
+    position: absolute;
+    top: 10px;
+    right: 1400px;
+    width: 30%;
+
+}
+.food-content{
+    border: 2px solid;
+    background-color: #813a17;
+    width: 400px;
+    height: 100%;
+}
+
+.foodimg2 {
+
+    border: 2px solid;
+    position: absolute;
+    top: 450px;
+    left: 1300px;
+    width: 30%;
+    
+
+} */
+#meal-plan-made-for-you {
+    background-color: #090706;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+   
+}
+
+.made-for-you {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 300px;
+}
+
+.plan-h5 {
+    font-size: 75px;
+    letter-spacing: 9px;
+    color: #fff3f3;
+    font-family: "Edwardian Script IT C";
+    text-align: center;
+}
+
+.plan-h2 {
+    /* font-size: clamp(80px, 7.5vw, 112px);
+    color: #dd7017;
+    font-weight: 700;
+    font-family: "Clear Sans";
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 300px; */
+    font-size: clamp(80px, 7.5vw, 104px);
+    letter-spacing: 12px;
+    width: 100%;
+    /* line-height: 299px; */
+    text-transform: uppercase;
+    color: #fff3f3;
+    font-family: "Gill Sans";
+    text-align: center;
+}
+
+.plan-p {
+    font-size: 42px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    color: #fff3f3;
+    font-weight: 300;
+    font-family: "Atrament Light";
+    text-align: center;
+}
+
+
+
+.img1 {
+    position: absolute;
+    width: 350px;
+    top: 5%;
+    right: 90%;
+}
+
+.img2 {
+    position: absolute;
+    width: 600px;
+    top: 25%;
+    left: 87%;
+}
+
+/* .about-us{
+    font-size: 42px;
+letter-spacing: 5px;
+line-height: 38px;
+color: #fff3f3;
+font-weight: 300;
+font-family: "Atrament Light";
+} */
+
+.aboutus2 {
+    height: 300px;
+    width: 70%;
+    border: 3px white;
+    margin-left: 40px;
+    /* background-color: red; */
+    /* font-size: 42px;
+    letter-spacing: 5px;
+    line-height: 38px;
+    color: #fff3f3;
+    font-weight: 300;
+    font-family: "Atrament Light"; */
+
+}
+
+.abouth3 {
+    font-size: 42px;
+    letter-spacing: 5px;
+    padding-bottom: 30px;
+    /* padding-left: 30px; */
+
+    color: #fff3f3;
+    font-weight: 300;
+    font-family: "Atrament Light";
+}
+
+.aboutp {
+    width: 1000px;
+
+    font-size: 25px;
+    letter-spacing: 4px;
+    line-height: 42px;
+    color: #fff3f3;
+    font-family: "Gill Sans";
+    text-align: left;
+
+}
+
+.moreinfo {
+
+    border: none;
+   
+    background-color: #649483;
+    font-size: clamp(16px, 2.5vw, 19px);
+    color: #fff4ee;
+    font-weight: 700;
+    font-family: "Clear Sans";
+    padding: 10px 20px;
+    margin: 5% 0 0 80%;
+
+
+}
+
+/* #cards
+{
+    height: 700px;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+}
+
+.card1{
+    height: 500px;
+    width: 250px;
+    background-color: rgb(31, 146, 33);
+    border: 2px solid;
+} */
+
+#Favorites {
+    background-color: #090706;
+    padding: 70px 0;
+}
+
+.our-content {
+    font-family: "Clear Sans";
+    color: #ffece1;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.our-content .our-h2 {
+    font-size: 112px;
+    font-size: clamp(20px, 8.6vw, 112px);
+}
+
+.our-content .our-p {
+    font-size: clamp(16px, 2.5vw, 19px);
+}
+
+#Favorites .row {
+   
+    display: flex;
+    column-gap: 35px;
+}
+
+#Favorites .row .col {
+    width: 33.33%;
+    /* margin-bottom: 100px; */
+    
+
+}
+
+.card1 {
+    text-align: center;
+    background-color: #7e8b6b;
+    font-family: "Clear Sans";
+    color: #103b2c;
+    margin-top: 100px;
+    padding: 30px 20px;
+}
+
+.card1 .card-h4 {
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 25%;
+    margin: 0 auto;
+    /* margin-bottom: 80%; */
+}
+
+.card1 .img {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.card1 .card-p {
+    font-size: 19px;
+    font-weight: 400;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 300px;
+ 
+}
+
+/* ---------------------------------- */
+.card2 {
+    text-align: center;
+    background-color: #7e8b6b;
+    font-family: "Clear Sans";
+    color: #103b2c;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    padding: 30px 20px;
+}
+
+
+.card2 .card-h4 {
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 20%;
+    margin: 0 auto;
+    /* margin-bottom: 80%; */
+}
+
+.card2 .img {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.card2 .card-p {
+    font-size: 19px;
+    font-weight: 400;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 300px;
+ 
+}
+/* 
+------------------------------------------ */
+
+.card3 {
+    text-align: center;
+    background-color: #7e8b6b;
+    font-family: "Clear Sans";
+    color: #103b2c;
+    margin-top: 300px;
+    margin-bottom: 200px;
+    padding: 30px 20px;
+}
+
+
+.card3 .card-h4 {
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 25%;
+    margin: 0 auto;
+    /* margin-bottom: 80%; */
+}
+
+.card3 .img {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.card3 .card-p {
+    font-size: 19px;
+    font-weight: 400;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 300px;
+ 
+}

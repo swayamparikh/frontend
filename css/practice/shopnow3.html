@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 550px;
+            width: 300px;
+            border: 2px solid;
+            margin: 50px auto;
+            position: relative;
+            box-shadow: 0 0 20px 10px rgba(92, 91, 91, 0.5);
+        }
+        .qview{
+            height: 50px;
+            width: 300px;
+            /* border: 2px solid; */
+            position: relative;
+            color: white;
+            text-align: center;
+            
+            background-color: black;
+            transition: 0.8s;
+            z-index: 1;
+            background-color: rgb(4, 16, 10);
+        }
+
+        .img {
+            height: 300px;
+            width: 200px;
+            background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg);
+            background-repeat: no-repeat;
+            border: 2px solid;
+            background-size: 100% 100%;
+            margin: 30px auto;
+            bottom: 15px;
+            transition: 0.8s;
+
+        }
+        .price{
+            height: 70px;
+            width: 250px;
+            /* border: 2px solid; */
+            margin: 0 auto;
+            color: red;
+            text-align: center;
+            /* top: 25px; */
+            position: relative;
+        }
+        .subcart{
+            height: 60px;
+            width: 250px;
+            border: 5px solid aqua;
+            margin: 0 auto;
+            right: 20px;
+            bottom: 35px;
+            position: relative;
+        }
+        .maincart{
+            height: 35px;
+            width: 220px;
+            background-color: aqua;
+            color: white;
+            margin: 0 auto;
+            text-align: center;
+            top: 20px;
+            transition: 0.8s;
+            transform: scale(1);
+
+            
+
+        }
+        /* .subcart:hover.maincart{
+            transform: scale(1.2);
+
+        } */
+         .maincart:hover.subcart{
+            transform: translate(50px);
+         }
+         .img:hover{
+            transform: rotateY(180deg);
+         }
+        .qview:hover{
+            
+            transform: translatey(350px);
+            background-color: aquamarine;
+            /* background-color: rgb(4, 16, 10); */
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="qview">
+            QUICK VIEW
+        </div>
+        <div class="img">
+
+        </div>
+        <div class="price">
+            Gabi Full Sleeve Sweatshirt
+            <span> $45.99 $69.71</span>
+        </div>
+
+   
+        
+     <div class="maincart">
+            SHOP NOW
+            <div class="subcart">
+      
+            </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

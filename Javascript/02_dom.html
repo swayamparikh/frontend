@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Dom ;-  document object model  -->
+    <!-- dom :- how to chnage dom :- manuputed  -->
+
+    <!-- internal js -->
+
+    <h1 id="h1"></h1>
+
+    <h2 id="h2"></h2>
+    <script>
+
+
+        // error handling console 
+        console.log("Hello javscript")
+        console.log(5+5)
+
+        // Dom
+        document.write("Hello this javascript","<br>")
+        document.write(5+5,"<br>")
+        document.write("<h1><i>Hello this h1 tag</i></h1>")
+
+        //select method
+        console.log(document.getElementById("h1"))
+
+        // write method Text data :- text print not allow html
+        document.getElementById("h1").innerText = "<i>Hello innerText method</i>"
+
+
+        console.log(document.getElementById("h2"))
+
+        // write mehtod innerHTML :- html and text allow
+        document.getElementById("h2").innerHTML = "<i>Hello this innerHTML Method</i>"
+
+    </script>
+
+
+</body>
+</html>

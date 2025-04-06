@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+
+            background-color: rgb(0, 17, 17);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 10px 20px;
+            position: relative;
+
+        }
+
+        .sec1 {
+            height: 400px;
+            background-image: url(https://images.pexels.com/photos/29975684/pexels-photo-29975684/free-photo-of-vibrant-sunflower-field-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .sec2 {
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-evenly;
+            height: 300px;
+
+        }
+
+        .main1 {
+            height: 200px;
+            border: 2px solid;
+            width: 30%;
+            background-color: bisque;
+        }
+
+        .main2 {
+            height: 200px;
+            border: 2px solid;
+            width: 30%;
+            background-color: bisque;
+        }
+
+        .sec3 {
+            display: flex;
+
+        }
+
+        .main3 {
+            height: 400px;
+            background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/mid.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 50%;
+
+        }
+
+        .main4 {
+            position: relative;
+            background-color: aqua;
+            width: 50%;
+        }
+
+        .child1 {
+            height: 300px;
+            width: 600px;
+            position: absolute;
+            top: 50px;
+            background-color: white;
+        }
+
+        .sec4 {
+            display: flex;
+            height: 600px;
+            margin-top: 150px;
+
+        }
+
+        .main5 {
+            height: 500px;
+            width: 25%;
+            border: 2px solid;
+            background-color: cadetblue;
+            margin-right: 30px;
+            margin-left: 150px;
+        }
+
+        .main6 {
+            height: 500px;
+            width: 50%;
+
+        }
+
+        .child2 {
+            height: 240px;
+            border: 2px solid;
+            background-color: chocolate;
+            margin-bottom: 20px;
+        }
+
+        .child3 {
+            height: 240px;
+            border: 2px solid;
+            background-color: blueviolet;
+        }
+
+        .sec5 {
+            display: flex;
+            margin-bottom: 100px;
+        }
+
+        .main7 {
+            height: 400px;
+            width: 50%;
+            border: 2px solid;
+            background-color: bisque;
+        }
+
+        .main8 {
+            height: 400px;
+            width: 50%;
+            border: 2px solid;
+            background-color: bisque;
+        }
+
+        .main9 {
+            height: 100px;
+            width: 100%;
+            background-color: rgba(89, 87, 87, 0.1);
+            margin-top: 100px;
+            border: 2px solid;
+            margin-bottom: 200px;
+        }
+
+        .main10 {
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-wrap: nowrap; */
+            flex-wrap: wrap;
+            justify-content: center;
+            /* gap: 20px; */
+            row-gap: 30px;
+            column-gap: 20px;
+        }
+
+        .box {
+            width: 250px;
+            height: 300px;
+            border: 2px solid;
+
+        }
+
+        .sec7 {
+            height: 300px;
+            border: 2px solid;
+            background-color: aquamarine;
+            margin-top: 50px;
+        }
+
+        .sec8 {
+            display: flex;
+            /* justify-content: space-between; */
+            margin-top: 100px;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 30px;
+            column-gap: 20px;
+        }
+
+        .main11 {
+            height: 150px;
+            width: 20%;
+            border: 2px solid;
+        }
+
+        .main12 {
+            height: 150px;
+            width: 20%;
+            border: 2px solid;
+        }
+
+        .main13 {
+            height: 150px;
+            width: 20%;
+            border: 2px solid;
+        }
+
+        .main14 {
+            height: 150px;
+            width: 20%;
+            border: 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">LOGO</div>
+            <ul>
+                <li><a href="http://">Home</a></li>
+                <li><a href="http://">About</a></li>
+                <li><a href="http://">Men's wear</a></li>
+                <li><a href="http://">Women's wear</a></li>
+                <li><a href="http://">Short codes</a></li>
+                <li><a href="http://">Contact</a></li>
+
+            </ul>
+            <div class="icon">icon</div>
+        </nav>
+        <section>
+            <div class="sec1"></div>
+            <div class="sec2">
+                <div class="main1"></div>
+                <div class="main2"></div>
+            </div>
+            <div class="sec3">
+                <div class="main3"></div>
+                <div class="main4">
+                    <div class="child1"></div>
+                </div>
+            </div>
+            <div class="sec4">
+                <div class="main5"></div>
+                <div class="main6">
+                    <div class="child2"></div>
+                    <div class="child3"></div>
+                </div>
+            </div>
+            <div class="sec5">
+                <div class="main7"></div>
+                <div class="main8"></div>
+            </div>
+            <div class="sec6">
+                <div class="main9"></div>
+                <div class="main10">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                    <div class="box">4</div>
+                    <div class="box">5</div>
+                    <div class="box">6</div>
+                    <div class="box">7</div>
+                    <div class="box">8</div>
+                </div>
+            </div>
+            <div class="sec7"></div>
+            <div class="sec8">
+                <div class="main11">1</div>
+                <div class="main12">2</div>
+                <div class="main13">3</div>
+                <div class="main14">4</div>
+            </div>
+        </section>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        Hello javscript
+    </div>
+    <br> <br>
+
+    <button onclick="changstyle()">chnage style</button>
+
+    
+    <button onclick="changstyle1()">remove style</button>
+
+    <script>
+            
+            let main_tag = document.getElementById("main")
+
+           function changstyle(){
+                 main_tag.style.background = "red";
+                 main_tag.style.color = "blue";
+                 main_tag.style.padding = "50px";
+                 main_tag.style.fontSize = "50px";
+                 main_tag.style.textAlign = "center"
+           }
+
+           function changstyle1(){
+                 main_tag.style.background = "white";
+                 main_tag.style.color = "black";
+                 main_tag.style.padding = "0px";
+                 main_tag.style.fontSize = "18px";
+                 main_tag.style.textAlign = "left"
+           }
+
+    </script>
+</body>
+</html>

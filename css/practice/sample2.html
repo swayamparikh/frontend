@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overflow{
+            height: 600px;
+            width: 700px;
+            overflow:hidden ;
+            margin: 150px auto;
+        
+        }
+        .img {
+            height: 300px;
+            width: 500px;
+            background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg);
+            border: 2px solid;
+            margin: 100px auto;
+           background-repeat: no-repeat ;
+           background-size: 100% 100%;
+           transform: translate(-20px);
+           transition: 0.5s;
+           
+           
+           
+        }
+        .border{
+            height: 200px;
+            width: 400px;
+            border: 5px, solid white;
+            margin: 50px auto;
+            color: aliceblue;
+            font-size:25px;
+            text-align: right;
+            line-height: 300px;
+            letter-spacing: 10px;
+            transform: translate(-20px);
+            transition: 0.5s;
+           opacity: 0;
+           
+        
+        }
+        .img:hover {
+            transform: translate(0%);
+        }
+        .img:hover .border{
+            transform: translate(0%);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overflow">
+       
+    <div class="img">
+       
+        <div class="border">
+            NEW ARRIVALS
+        </div>
+
+    </div>
+</div>
+    
+</body>
+
+</html>

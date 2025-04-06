@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <script>
+ 
+         let arr = [1,2,3,4,5,6,"shubhamn","brijesh","het",7,8,9]
+ 
+         console.log(arr)
+         console.log(arr[6])
+ 
+         // document.write(arr)
+         // simple for
+ 
+         // 1) simple for loop
+         // for(let i=0;i<arr.length;i++){
+         //     console.log(i)
+         //     // value[index]
+         //     console.log(arr[i])
+         //     document.write(arr[i],"<br>")
+         // }
+ 
+         //2) for of
+ 
+         // for(let data of arr){
+         //     console.log(data)
+         //     // value of
+         //     document.writeln(data,"<br>")
+         // }
+ 
+         // 3) for in
+ 
+         // for(let data in arr){
+         //     // index
+         //     console.log(data)
+         //     // value[index]
+         //     document.writeln(arr[data],"<br>")
+         // }
+ 
+         // 4) forEach data,index
+ 
+         arr.forEach((data,index,arr)=>{
+             console.log(data)
+             document.write(index," => ",data,"<br>")
+             // console.log(arr)
+         })
+ 
+     </script>
+ </body>
+ </html>

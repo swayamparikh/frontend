@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .main {
+            height: 500px;
+            width: 300px;
+            /* border: 2px solid; */
+            margin: 150px auto;
+            box-shadow: 0 0 20px 10px rgba(92, 91, 91, 0.5);
+
+        }
+
+        .main2 {
+            height: 300px;
+            width: 100%;
+            position: relative;
+
+
+
+
+        }
+
+        .new {
+            size: 20px;
+            position: absolute;
+
+            background-color: red;
+            color: white;
+            right: 0;
+
+        }
+
+        .mainbox {
+
+
+            height: 250px;
+            width: 200px;
+            margin: 0px 45px;
+
+            /* border: 2px solid; */
+            background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: .6s;
+        
+        }
+
+        /* .mainbox:hover {
+            transform: rotateY(180deg);
+
+        } */
+
+        .main2:hover .mainbox {
+            background-color: rgba(184, 177, 177, 0.3);
+            transform: rotateY(180deg);
+         
+
+        }
+
+        .box {
+            height: 40px;
+            width: 220px;
+            background-color: aqua;
+            color: white;
+            margin: 30px auto;
+            text-align: center;
+            line-height: 40px;
+        }
+        
+        .qview {
+            height: 40px;
+            width: 100%;
+            /* border: 2px solid; */
+            position: absolute;
+            transition: 1s;
+            z-index: 1;
+            color: aliceblue;
+            
+           
+        }
+        .price{
+            height: 50px;
+            width: 215px;
+            /* border: 2px solid; */
+            margin: 0 auto;
+            color: red;
+            position: relative;
+            z-index: 1;
+            
+
+        }
+        .price.span{
+            font-size: small;
+            position: absolute;
+            
+        }
+        .qview:hover{
+            transform: translatey(200px);
+            background-color: rgb(4, 16, 10);
+            
+        }
+        /* .border{
+            height: 80px;
+            width: 450px;
+            background-color: aqua;
+            color: white;
+            margin: 100px auto;
+            text-align: center;
+            line-height: 40px;
+        } */
+
+
+
+
+        /* .mainbox.img {
+            height: 200px;
+            width: 250px;
+            margin: 100px 20px;
+
+            border: 2px solid;
+            background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg);
+            size: 100%;
+            background-repeat: no-repeat;
+            transition: .6s;
+        } */
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="main2">
+            <div class="qview">
+                QUICK VIEW
+            </div>
+                <div class="new">
+                    New
+                </div>
+
+                <div class="mainbox">
+                    <div class="img">
+                    </div>
+                </div>
+           
+        </div>
+            <div class="cartbody">
+                <div class="price">
+                    GABI FULL SLEEVE TSHIRT
+                    <span>$45.99</span>
+
+                </div>
+
+            </div>
+            <div class="box">
+                ADD TO CART 
+                <div class="border"></div>
+                
+            </div>
+        
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" onsubmit="return validate()">
+        <div>
+            <input type="text" placeholder="enter your name" id="name1">
+            <span id="nmerr"></span>
+        </div>
+        <div> <input type="email" placeholder="enter your email" id="email">
+            <span id="emerr"></span>
+        </div>
+        <div>
+            <input type="tel" placeholder="enter your phone" id="phone">
+            <span id="pherr"></span>
+        </div>
+        <div>
+            <input type="password" placeholder="enter your password" id="psw">
+            <span id="pswerr"></span>
+        </div>
+        <div>
+            <input type="password" placeholder="enter your cpassowrd" id="cpsw">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+    <script>
+
+        let name_tag = document.getElementById("name1");
+        let nmerr = document.getElementById("nmerr")
+        let email_tag = document.getElementById("email");
+        let emerr = document.getElementById("emerr")
+        let phone_tag = document.getElementById("phone");
+        let pherr = document.getElementById("pherr")
+        let password_tag = document.getElementById("psw");
+        let pswerr = document.getElementById("pswerr")
+        let cpassword_tag = document.getElementById("cpsw");
+        // console.log(name_tag)
+        // console.log(nmerr)
+
+        function validate(){
+            if(name_tag.value == "" || name_tag.value == null){
+                nmerr.innerHTML = "pls required name..!";
+                nmerr.style.color = "red";
+                return false;
+            }
+            else{
+                nmerr.innerHTML = ""
+            }
+
+            if(email_tag.value == "" || email_tag.value == null){
+                emerr.innerHTML = "pls required Email..!";
+                emerr.style.color = "red";
+                return false;
+            }
+            else{
+                emerr.innerHTML = ""
+            }
+
+            if(phone_tag.value == "" || phone_tag.value == null){
+                pherr.innerHTML = "pls required Phone..!";
+                pherr.style.color = "red";
+                return false;
+            }
+            else{
+                pherr.innerHTML = ""
+            }
+            if(password_tag.value == "" || password_tag.value == null){
+                pswerr.innerHTML = "pls required password..!";
+                pswerr.style.color = "red";
+                return false;
+            }
+            else{
+                pswerr.innerHTML = ""
+            }
+
+            if(password_tag.value !== cpassword_tag.value){
+                alert("password does not match..!")
+                return false
+            }
+        }
+
+    </script>
+</body>
+
+</html>

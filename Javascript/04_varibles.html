@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- varibale ;- to store a value in singlevalue and multiple value  -->
+    <!-- syntax ;- 
+    var varibale-name = value;   -->
+
+
+    <!-- rule of varibale  -->
+     <!-- 1) do not start with number :- 12sdan 
+     2) do not start with symbole ;- %sad 
+     3) do not start with keyword :- console,alert  (32kay) -->
+
+     <script>
+
+        // totaly 3 type 
+        // 1) var golbal scope  :-golbal data manage
+
+        var x = 10  //drecalration allow
+        var x = 20  //re-decalration allow
+        x = 30  // re-assigement allow
+        console.log("x =>",x)
+        document.write("x =>",x,"<br>")
+
+
+        // 2) let local/block scope
+
+        let y = 40  //drecalration allow
+        // let y = 50 //re- drecalration not allow
+        y = 50  // re-assigement allow
+
+        console.log("y =>",y)
+        document.write("y =>",y,"<br>")
+
+
+        // 3) const uniqe data 
+
+        const z = 70 //drecalration allow
+        // const z = 80 //re- drecalration not allow
+        // z = 90 // re-assigement not allow
+        console.log("z =>",z)
+        document.write("z =>",z)
+
+
+     </script>
+
+
+</body>
+</html>

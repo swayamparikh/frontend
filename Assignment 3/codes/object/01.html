@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Object Manipulation</title>
+   
+</head>
+<body>
+
+    <h2>Car Object Manipulation</h2>
+
+    <button onclick="showCarDetails()">Show Car Details</button>
+    <button onclick="updateYear()">Update Year</button>
+    <button onclick="addColor()">Add Color</button>
+
+    <div class="output" id="output"></div>
+
+    <script>
+        let car = {
+            brand: "Toyota",
+            model: "Corolla",
+            year: 2020
+        };
+
+        function showCarDetails() {
+            document.getElementById("output").innerHTML = 
+                `Brand: ${car.brand}<br>Model: ${car.model}<br>Year: ${car.year}`;
+        }
+
+        function updateYear() {
+            car.year = 2023;
+            showCarDetails();
+        }
+
+        function addColor() {
+            car.color = "Red";
+            document.getElementById("output").innerHTML += `<br>Color: ${car.color}`;
+        }
+    </script>
+
+</body>
+</html>

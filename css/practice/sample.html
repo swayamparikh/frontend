@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            /* border: 15px solid; */
+            margin: 500px auto;
+            overflow: hidden;
+
+        }
+        .left{
+            height: 200px;
+            width: 200px;
+            transform: translate(100% ,-100%);
+            background: rgb(202, 131, 17);
+            border: 5px solid;
+            transition: 0.8s;
+        }
+        .right{
+            height: 200px;
+            width: 200px;
+            transform: translate(-100% ,0%);
+            background: rgb(207, 207, 232);
+            border: 5px solid;
+            transition: 0.8s;
+        }
+        .main:hover .left{
+            transform: translate(0%,0%);
+        }
+        .main:hover .right{
+            transform: translate(0%,-100%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left"></div>
+        <div class="right"></div>
+
+    </div>
+</body>
+</html>
