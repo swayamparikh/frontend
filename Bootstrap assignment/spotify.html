@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sidebar-top {
+      padding: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .nav-links,
+    .bottom-links {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-links a,
+    .bottom-links a {
+      display: flex;
+      align-items: center;
+      color: #b3b3b3;
+      margin: 15px 0;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a i,
+    .bottom-links a i {
+      margin-right: 15px;
+      width: 20px;
+      text-align: center;
+    }
+
+    .nav-links a:hover,
+    .bottom-links a:hover {
+      color: #fff;
+    }
+
+    .sidebar-bottom {
+      padding: 20px;
+      border-top: 1px solid #282828;
+    }
+
+    .main {
+      flex: 1;
+      background-color: #181818;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 20px;
+      background-color: #282828;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 {
+      font-size: 24px;
+    }
+
+    .search-bar {
+      background-color: #121212;
+      border: 1px solid #333;
+      padding: 8px 12px;
+      border-radius: 20px;
+      width: 200px;
+      color: #fff;
+    }
+
+    .content {
+      padding: 20px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .content h2 {
+      margin-bottom: 15px;
+    }
+
+    .playlist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .playlist-card {
+      background-color: #282828;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    .playlist-card:hover {
+      background-color: #333;
+    }
+
+    .playlist-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .playlist-card h3 {
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .footer {
+      padding: 15px 20px;
+      background-color: #000;
+      text-align: center;
+      font-size: 14px;
+      color: #b3b3b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main-content">
+      <div class="sidebar">
+        <div class="sidebar-top">
+          <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify Logo" />
+          </div>
+          <div class="nav-links">
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+            <a href="#"><i class="fas fa-search"></i>Search</a>
+            <a href="#"><i class="fas fa-book"></i>Your Library</a>
+            <a href="#"><i class="fas fa-plus-square"></i>Create Playlist</a>
+            <a href="#"><i class="fas fa-heart"></i>Liked Songs</a>
+          </div>
+        </div>
+        <div class="sidebar-bottom">
+          <div class="bottom-links">
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+            <a href="#"><i class="fas fa-search"></i>Search</a>
+            <a href="#"><i class="fas fa-book"></i>Your Library</a>
+            <a href="#"><i class="fas fa-gem"></i>Premium</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="header">
+          <h1>Welcome</h1>
+          <input class="search-bar" type="text" placeholder="Search" />
+        </div>
+
+        <div class="content">
+          <h2>Playlists</h2>
+          <div class="playlist-grid">
+            <div class="playlist-card">
+              <img src="https://picsum.photos/id/1011/300/300" alt="Chill Vibes" />
+              <h3>Chill Vibes</h3>
+            </div>
+            <div class="playlist-card">
+              <img src="https://picsum.photos/id/1012/300/300" alt="Workout Hits" />
+              <h3>Workout Hits</h3>
+            </div>
+            <div class="playlist-card">
+              <img src="https://picsum.photos/id/1015/300/300" alt="Top 50" />
+              <h3>Top 50</h3>
+            </div>
+            <div class="playlist-card">
+              <img src="https://picsum.photos/id/1016/300/300" alt="Relax & Unwind" />
+              <h3>Relax & Unwind</h3>
+            </div>
+            <div class="playlist-card">
+              <img src="https://picsum.photos/id/1018/300/300" alt="Party Time" />
+              <h3>Party Time</h3>
+            </div>
+            <div class="playlist-card">
+              <img src="https://picsum.photos/id/1020/300/300" alt="Focus Beats" />
+              <h3>Focus Beats</h3>
+            </div>
+            <div class="playlist-card">
+              <img src="https://picsum.photos/id/1021/300/300" alt="Acoustic Mornings" />
+              <h3>Acoustic Mornings</h3>
+            </div>
+            <div class="playlist-card">
+              <img src="https://picsum.photos/id/1022/300/300" alt="Deep House" />
+              <h3>Deep House</h3>
+            </div>
+            <div class="playlist-card">
+              <img src="https://picsum.photos/id/1024/300/300" alt="Jazz Classics" />
+              <h3>Jazz Classics</h3>
+            </div>
+            <div class="playlist-card">
+              <img src="https://picsum.photos/id/1025/300/300" alt="Throwback Hits" />
+              <h3>Throwback Hits</h3>
+            </div>
+            <div class="playlist-card">
+              <img src="https://picsum.photos/id/1026/300/300" alt="Hip-Hop Mix" />
+              <h3>Hip-Hop Mix</h3>
+            </div>
+            <div class="playlist-card">
+              <img src="https://picsum.photos/id/1033/300/300" alt="Indie Rock" />
+              <h3>Indie Rock</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          © 2025 Spotify Clone. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

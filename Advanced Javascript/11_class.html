@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- class :- collection of data member(varibles) and memeber function (fucntion1) as class  -->
+    <!-- class as blue print of object   -->
+
+    <!-- syntax :- 
+    class classname {
+        member function {
+            data memebr 
+        }
+        member function {
+            data memebr 
+        }
+        member function {
+            data memebr 
+        }
+    } 
+    
+    let obj = new classname
+    
+    -->
+
+    <script>
+
+        class Bank{
+            // memebr function
+            x = function Details(pin,blance){
+
+                // data member
+                let bankName = "HDFC";
+                let bankIFSC = "HDFC0002H";
+                let bankpin = pin;
+                let bankBalance = blance;
+
+                console.log("bank name :- ",bankName)
+                console.log("bank IFSC :- ",bankIFSC)
+                console.log("bank Bankpin :- ",bankpin)
+                console.log("bank Balance :- ",bankBalance)
+            }
+
+            y = function deposit(){
+                console.log("Deposit function call")
+            }
+
+
+        }
+
+        // console.log(Bank)
+
+        let ayushi = new Bank
+        console.log(ayushi)
+        ayushi.x(123,40000)
+        ayushi.y()
+
+        let sysam = new Bank
+        console.log(sysam)
+        sysam.x(234,30000)
+        sysam.y()
+
+        let shubham =  new Bank
+        shubham.y()
+        shubham.x(345,10000)
+    
+    </script>
+
+
+
+</body>
+</html>

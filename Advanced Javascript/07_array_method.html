@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- array method logic reduce -->
+
+    <script>
+
+        let arr = [1,2,3,4,5]
+        let arr2 = [6,7,8,9,10]
+        
+        // data find
+        console.log(arr.length)
+
+        // join 
+        let array = arr.concat(arr2)
+        console.log(array)
+
+        // after add push 
+        arr.push(6)
+        console.log(arr)
+
+        // after remove pop
+        arr.pop()
+        console.log(arr)
+
+        // before add unshift
+        arr.unshift(0)
+        console.log(arr)
+
+        // before remove shift
+        arr.shift()
+        console.log(arr)
+
+        console.log(arr.indexOf(5))
+
+        console.log(arr[2])
+
+
+        const words = ["spray", "elite", "exuberant", "destruction", "present"];
+
+        let store = words.filter((data) => data.length > 6)
+
+        console.log(store)
+
+        const elements = ["Fire", "Air", "Water"];
+
+        console.log(elements.join())
+        console.log(elements.join(""))
+        console.log(elements.join("="))
+
+
+
+        const animals = ["ant", "bison", "camel", "duck", "elephant","asjdghj","asdjhk","asdjhi"];
+
+        console.log(animals)
+        // console.log(animals.slice(2))
+        // console.log(animals.slice(2,5))
+        console.log(animals.slice(2,5))
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Pending: The task is in the initial state.
+        // Fulfilled: The task was completed successfully, and the result is available.
+        // Rejected: The task failed, and an error is provided.
+
+        // resolve(value): Marks the promise as fulfilled and provides a result.
+        // reject(error): Marks the promise as rejected with an error.
+
+        let ab = new Promise(function(call,reject){
+            if(!call){
+                // console.log("hello data called")
+                call("Hello data called..")
+            }
+            else{
+                reject("hello data not found")
+            }
+        })
+
+        console.log(ab)
+
+    </script>
+</body>
+</html>

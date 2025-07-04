@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- fetch javacrtipt inbuilt use -->
+    <!-- method get , post,delete,put/patch -->
+
+    <!-- fetch("location",{method:"GET"})
+     .then((covert json object))
+     .then(print data) -->
+
+    <button onclick="add()">click me</button>
+
+    <script>
+
+
+        function add() {
+
+            fetch("data.txt", {
+                method: "GET"
+            })
+                .then((res) => {
+                    // convert text data string
+                    return res.text()
+                })
+                .then((data) => {
+                    console.log(data)
+                    document.write(data)
+                })
+        }
+
+
+    </script>
+</body>
+
+</html>

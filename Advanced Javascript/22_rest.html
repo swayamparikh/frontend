@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ... store value data -->
+
+    <!-- ... rest :- function parameter -->
+    <!-- ... spred -->
+
+    <script>
+
+        function test(...mahi){
+            let sum = 0 
+            for(let dhoni in mahi){
+                // console.log(dhoni)
+                sum = sum + mahi[dhoni]
+            }
+            return sum;
+        }
+
+        console.log(test(40,20,50,60,23,20))
+
+    </script>
+</body>
+</html>

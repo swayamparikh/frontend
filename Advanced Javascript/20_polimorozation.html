@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- method overrloading(compile error)  :- class in same but function name same but deffent paramter  -->
+    <!-- method overring(run-time error) :- fucntion name same and class deffent inhritace   -->
+
+    <script>
+
+    // method overloading
+
+    class abc {
+        details(a){
+            console.log("a data find ,",a)
+        }
+        details(a,b){
+            console.log("sum =>",a+b)
+        }
+    }
+
+    let ob = new abc
+    console.log(ob)
+    ob.details(20,30)
+    document.write(ob)
+
+    // method overring
+
+    class A{
+        details1(){
+            console.log("A class compo")
+        }
+    }
+    class B extends A {
+        details1(){
+            console.log("B class Compo")
+        }
+    }
+    class C extends B{
+        details1(){
+            console.log("C class compo")
+        }
+    }
+
+    let ob1 = new C
+    console.log(ob1)
+    ob1.details1()
+    // ob1.details1()
+
+    // arr store loop
+    // let arr = [new A,new B,new C]
+    // console.log(arr)
+    // arr.forEach((user)=>{
+    //     user.details1()
+    // })
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Address</th>
+                <th scope="col">Companay</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+
+    <script>
+        fetch("https://jsonplaceholder.typicode.com/users", {
+            method: "GET"
+        })
+            .then((res) => {
+                return res.json()
+            })
+            .then((data) => {
+                console.log(data)
+                data.forEach((user) => {
+                    console.log(user)
+
+                    let tbody = document.querySelector("tbody")
+
+                    // row
+                    let trow = tbody.insertRow()
+                    
+                    // inert cell
+                    let idcell = trow.insertCell(0);
+                    let namecell = trow.insertCell(1);
+                    let Emailcell = trow.insertCell(2);
+                    let addresscell = trow.insertCell(3);
+                    let companycell = trow.insertCell(4);
+
+                    // textcontent
+                    idcell.textContent = user.id;
+                    namecell.textContent = user.name;
+                    Emailcell.textContent = user.email
+                    addresscell.textContent = user.address.city
+                    companycell.textContent = user.company.name
+
+                });
+            })
+    </script>
+</body>
+
+</html>

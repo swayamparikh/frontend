@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class A {
+            xx = function A(){
+                console.log("A class Compo")
+            }
+        }
+        class B extends A{
+            y = function B(){
+                console.log("B class Compo")
+            }
+        }
+
+        class C extends A{
+            z = function C(){
+                console.log("C class Compo")
+            }
+        }
+
+        let ob = new B
+        ob.xx()
+        ob.y()
+
+        let ob1 = new C 
+        ob1.z()
+        ob1.xx()
+    </script>
+</body>
+</html>

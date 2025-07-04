@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- inhritance :- one class to others class extends -->
+
+    <!-- 1) single level 
+    2) muti -level 
+    3) multiple level not use for javascript
+    4) hyrachical 
+    5) hybrid  -->
+
+
+
+    <!-- class 1name {
+        property {
+
+        }
+    }
+    class 2name extends 1name {
+        propetyu {
+
+        }
+    }
+    let ob = new 2name -->
+
+    <script>
+        // single level
+        class A {
+            x = function A() {
+                console.log("Class compo A")
+            }
+            y = function data(){
+                console.log("Claas A data")
+            }
+        }
+        class B extends A {
+            z = function B(){
+                console.log("Class Compo B")
+            }
+        }
+
+        let ob = new B 
+        console.log(ob)
+        ob.x()
+        ob.y()
+        ob.z()
+    </script>
+
+
+</body>
+
+</html>

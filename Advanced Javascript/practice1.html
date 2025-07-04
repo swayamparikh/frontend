@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch("https://dummyjson.com/products",{
+            method:"GET"
+        })
+        .then((res)=>{
+            return res.json()
+        })
+        .then((data)=>{
+            console.log(data)
+            for(let admin of data.admin){
+                console.log(admin)
+                document.writeln(`id :- ${admin.title} name :- ${admin.rating}  course : ${admin.price} <br>`)
+            }
+            data.user.forEach((users) => {
+                console.log(users)
+                document.writeln(`id :- ${users.title} name :- ${users.rating}  course : ${users.price} <br>`)
+
+            });
+        })
+    </script>
+</body>
+</html>

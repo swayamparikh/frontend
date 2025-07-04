@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function result(data){
+            console.log("hello ",data)
+        }
+
+        let pr = new Promise((res,reject)=>{
+            if(!res){
+                res("data success..!")
+            }
+            else{
+                reject("data not Found..!")
+            }
+        }).then(
+            function(data){
+                result(data)
+            }
+        )
+        .catch(function(user){
+            result(user)
+        })
+</script>
+</body>
+</html>

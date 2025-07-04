@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- encu :- hide private -->
+    <!-- abs = :- private how access -->
+
+
+
+    <script>
+
+        function Person(name,age){
+            
+            // private data encu
+            let _name = name;
+            let _age = age;
+            // let data = newdata;
+
+            // abstrtion private data access
+            this.getname = function(){
+                return _name;
+            }
+
+            this.getage = function(){
+                return _age;
+            }
+
+            this.setage =(newage)=>{
+                return _age = newage;
+            }
+
+        }
+
+        let user = new Person("swayam",24)
+
+        console.log(user._name)
+        console.log(user._age)
+
+        console.log(user.getname())
+        console.log(user.getage())
+        console.log(user.setage(26))
+        console.log(user.getage())
+
+    </script>
+</body>
+</html>

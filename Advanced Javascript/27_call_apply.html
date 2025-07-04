@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            fullname : function(city,state){
+
+                console.log("firname name",this.firstname," lastname" ,this.lastname , "city",city, " state" , state)
+                // document.write(` Firstname :- ${this.firstname}, lastname :- ${this.lastname} , `)
+            }
+        }
+
+        let data = {
+            firstname : "ayhusi",
+            lastname : "patel"
+        }
+
+        let data1 = {
+             firstname : "shubham",
+            lastname : "jadav"
+        }
+
+        // use method call sparate argu
+        person.fullname.call(data,"ahmedabad","gujarat")
+
+        // apply method as array store
+        person.fullname.apply(data1,["bharuch","gujarat"])
+
+    </script>
+</body>
+</html>

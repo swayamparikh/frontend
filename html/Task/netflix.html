@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #141414;
+      color: #fff;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #000;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo img {
+      height: 40px;
+    }
+    nav a {
+      margin-left: 20px;
+      font-size: 16px;
+      color: #e5e5e5;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .section {
+      padding: 20px;
+    }
+    .section h2 {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background-color: #222;
+      border-radius: 4px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 225px;
+      object-fit: cover;
+      display: block;
+    }
+    .card-title {
+      padding: 10px;
+      font-size: 14px;
+      color: #e5e5e5;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      z-index: 2;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #b3b3b3;
+      background-color: #000;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" />
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">My List</a>
+    </nav>
+  </header>
+
+  <div class="section">
+    <h2>Popular on Netflix</h2>
+    <div class="row">
+      <div class="card">
+        <img src="https://picsum.photos/id/1011/300/450" alt="Movie 1">
+        <div class="card-title">Dark Secrets</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1012/300/450" alt="Movie 2">
+        <div class="card-title">Ocean Depths</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1015/300/450" alt="Movie 3">
+        <div class="card-title">City Lights</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1016/300/450" alt="Movie 4">
+        <div class="card-title">Wild Escape</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1018/300/450" alt="Movie 5">
+        <div class="card-title">Haunted House</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1020/300/450" alt="Movie 6">
+        <div class="card-title">Romantic Ride</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Trending Now</h2>
+    <div class="row">
+      <div class="card">
+        <img src="https://picsum.photos/id/1024/300/450" alt="Movie 7">
+        <div class="card-title">Into the Night</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1025/300/450" alt="Movie 8">
+        <div class="card-title">Lost in Space</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1027/300/450" alt="Movie 9">
+        <div class="card-title">Hidden Truth</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1033/300/450" alt="Movie 10">
+        <div class="card-title">Silent River</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1035/300/450" alt="Movie 11">
+        <div class="card-title">Edge of Fear</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1039/300/450" alt="Movie 12">
+        <div class="card-title">Fading Memories</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>New Releases</h2>
+    <div class="row">
+      <div class="card">
+        <img src="https://picsum.photos/id/1040/300/450" alt="New 1">
+        <div class="card-title">The Awakening</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1041/300/450" alt="New 2">
+        <div class="card-title">Twilight City</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1042/300/450" alt="New 3">
+        <div class="card-title">Neon Dreams</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1043/300/450" alt="New 4">
+        <div class="card-title">The Last Voyage</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1044/300/450" alt="New 5">
+        <div class="card-title">Shadow Realm</div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1045/300/450" alt="New 6">
+        <div class="card-title">Parallel Lines</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Netflix Clone. All rights reserved.
+  </footer>
+</body>
+</html>

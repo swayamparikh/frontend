@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- api application prog interface -->
+    <!-- json :- javascript object notation  -->
+    <!-- easy read data -->
+    <!-- easy store data -->
+    <!-- rest fully api  -->
+
+    <!-- let object = [
+    {
+        id : 1,
+        name : "shubham"
+        course : "Front-end"
+    }]
+
+    let json = `[{
+        "id" : 1,
+        "name" : "shubham",
+        "course": "back-end"
+    }]` -->
+
+
+    <script>
+
+        let json = `[
+            {
+                "id":1,
+                "name" : "shubham",
+                "course" : "Front-end"
+            },
+            {
+                "id":2,
+                "name" : "ayushi",
+                "course" : "Back-end"
+            },
+            {
+                "id":3,
+                "name" : "brijesh",
+                "course" : "full-stack"
+            }
+        ]`
+
+        console.log(json)
+        // document.writeln(json)
+
+        // json as object method pras
+        let ob = JSON.parse(json)
+        console.log(ob)
+        // document.writeln(ob)
+
+        for(let data of ob){
+            console.log(data)
+            document.write(`<h1>id :- ${data.id} name :- ${data.name} course :- ${data.course}</h1>`)
+        }
+
+        let object = [
+            {
+                id:1,
+                name : "shubham",
+                course : "Front-end"
+            },
+            {
+                id:2,
+                name : "ayushi",
+                course : "Back-end"
+            },
+            {
+                id:3,
+                name : "brijesh",
+                course : "full-stack"
+            },
+            {
+                id:4,
+                name : "Het patel",
+                course : "full-stack"
+            }
+    ]
+
+    // object convert json data format
+    console.log(object)
+
+    let jsondata =  JSON.stringify(object)
+
+    console.log(jsondata)
+
+
+    </script>
+</body>
+</html>

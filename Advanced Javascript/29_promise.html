@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- promise :- it;s one type of object -->
+    <!-- resolve and reject -->
+
+    <!-- three state  -->
+      <!-- 1) pending :- hold pending   -->
+      <!-- 2) fullfiled :- completed data -->
+      <!-- 3) reject :- reject data  -->
+
+      <!-- syntax :-
+      let ab = new Promise(function(res,rej){
+        ..logic
+      }) -->
+
+
+    <script>
+
+        // 1)pending
+        // 2) resolve :- fullfield true codition
+        // 3) rejected :- error msg state
+
+        let p = new Promise(function(res,erorr){
+            let a=2
+             if(a==1){
+                res("data success")
+            }
+            else{
+                erorr("data not found..!")
+            }
+        })
+
+        console.log(p)
+    </script>
+
+    </body>
+</html>

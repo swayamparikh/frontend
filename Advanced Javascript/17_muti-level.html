@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 2) muti-level 
+
+        class A {
+            x = function a(){
+                console.log("Class Compo A")
+            }
+        }
+        class B extends A{
+            y =function b(){
+                console.log("Class Compo B")
+            }
+        }
+        class C extends B{
+            z = function c(){
+                console.log("Class Compo c")
+            }
+        }
+
+        let ob = new C
+        console.log(ob)
+        ob.z()
+        ob.x()
+        ob.y()
+    </script>
+</body>
+</html>
