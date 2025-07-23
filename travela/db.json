@@ -1,0 +1,108 @@
+{
+  "blogs": [
+    {
+      "id": "2",
+      "name": "Adventures Trip main",
+      "posted": "Royal Data",
+      "desc": "Hello Adventures park 2...",
+      "date": "1222-12-12",
+      "img": "https://images.pexels.com/photos/31027069/pexels-photo-31027069/free-photo-of-colorful-longtail-boats-in-bangkok-canal.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "1752309674418",
+      "name": "Sp",
+      "posted": "asdaskjd",
+      "desc": "canada",
+      "date": "2025-06-16",
+      "img": "https://tse1.mm.bing.net/th/id/OIP.RNCQyNWNTaFBeT0yK7wH_gAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+      "id": "1752311119359",
+      "name": "Swayu",
+      "posted": "saputara",
+      "desc": "Demo1 ",
+      "date": "2025-06-16",
+      "img": "https://images.pexels.com/photos/1188083/pexels-photo-1188083.png?cs=srgb&dl=sea-dawn-nature-1188083.jpg&fm=jpg"
+    },
+    {
+      "id": "1752317685775",
+      "name": "RAHUL",
+      "posted": "AHMD",
+      "desc": "africa",
+      "date": "2000-01-01",
+      "img": "https://tse1.mm.bing.net/th/id/OIP.RNCQyNWNTaFBeT0yK7wH_gAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+      "id": "1752326526358",
+      "name": "Netra",
+      "posted": "Main",
+      "desc": "hello",
+      "date": "2006-12-18",
+      "img": "https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg"
+    }
+  ],
+  "guies": [
+    {
+      "id": "1",
+      "name": "Het patel2",
+      "Designation": "tour guies",
+      "img": "https://images.pexels.com/photos/15885734/pexels-photo-15885734/free-photo-of-snowy-hikes-in-waterton-lakes-national-park.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "1752327410220",
+      "name": "Swayam Sachinbhai Parikh",
+      "Designation": "guide",
+      "img": "https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg"
+    },
+    {
+      "id": "1752327652996",
+      "name": "rahul",
+      "Designation": "guide",
+      "img": "https://images.pexels.com/photos/1188083/pexels-photo-1188083.png?cs=srgb&dl=sea-dawn-nature-1188083.jpg&fm=jpg"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "name": "admin2",
+      "email": "admin2@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "user1",
+      "email": "user1@gmail.com",
+      "password": "123456",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "user2",
+      "email": "user2@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    },
+    {
+      "id": "3",
+      "name": "user3",
+      "email": "user3@gmail.com",
+      "password": "123456",
+      "status": "block"
+    },
+    {
+      "id": "1752813256883",
+      "email": "swayamparikh1@gmail.com",
+      "name": "Sp",
+      "password": "12345",
+      "status": "unblock"
+    }
+  ]
+}
