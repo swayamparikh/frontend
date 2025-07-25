@@ -1,0 +1,42 @@
+{
+  "user": [
+    {
+      "id": "1751887259463",
+      "name": "jigar sir",
+      "email": "admin@gmail.com",
+      "password": "sad"
+    },
+    {
+      "id": "1751887266397",
+      "name": "het patel",
+      "email": "harsh@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "1751971602216",
+      "name": "sujal",
+      "email": "shubhamjadav.tops@gmail.com",
+      "password": "asdas"
+    },
+    {
+      "id": "1751972955562",
+      "name": "shubham",
+      "email": "shubhamjadav.tops@gmail.com",
+      "password": "adas"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "subadmin",
+      "email": "subadmin@gmail.com",
+      "password": "123456"
+    }
+  ]
+}
