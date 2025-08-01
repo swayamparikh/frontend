@@ -1,0 +1,19 @@
+/* Home.css */
+.custom-navbar {
+  background-color: #f8f9fa; /* light gray */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+}
+
+.custom-navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.custom-navbar .btn {
+  margin-left: 10px;
+}

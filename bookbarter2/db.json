@@ -1,0 +1,153 @@
+{
+  "mybook": [
+    {
+      "id": "372d",
+      "title": "Bhagavad Gita2",
+      "author": "Ved Vyasa",
+      "genre": "Hindu Text",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51Z0nLAfLmL._SX331_BO1,204,203,200_.jpg",
+      "price": "699"
+    },
+    {
+      "id": "772e",
+      "title": " Bhagavad Gita9",
+      "author": "Ved Vyasa",
+      "genre": "Hindu Text",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg",
+      "price": "999"
+    },
+    {
+      "id": "2b7e",
+      "title": " Bhagavad Gita9",
+      "author": "Ved Vyasa",
+      "genre": "Hindu Text",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg",
+      "price": "999"
+    }
+  ],
+  "contactus": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "contact": "9876543210"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "contact": "9123456789"
+    },
+    {
+      "id": "402b",
+      "name": "Swayam Sachinbhai Parikh",
+      "email": "swayamparikh1@gmail.com",
+      "contact": "9016412460"
+    },
+    {
+      "id": "6252",
+      "name": "Sp",
+      "email": "swayamparikh1@gmail.com",
+      "contact": "9016412460"
+    }
+  ],
+  "cart": [
+    {
+      "id": "c92c",
+      "title": "Bhagavad Gita",
+      "author": "Ved Vyasa",
+      "genre": "Hindu Text",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51Z0nLAfLmL._SX331_BO1,204,203,200_.jpg",
+      "price": "599"
+    },
+    {
+      "id": "1",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genre": "Fiction",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51Z0nLAfLmL._SX331_BO1,204,203,200_.jpg",
+      "price": "399"
+    },
+    {
+      "id": "2abc",
+      "title": " Bhagavad Gita3",
+      "author": "Ved Vyasa",
+      "genre": "Hindu Text",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg",
+      "price": "999"
+    },
+    {
+      "id": "772e",
+      "title": " Bhagavad Gita9",
+      "author": "Ved Vyasa",
+      "genre": "Hindu Text",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg",
+      "price": "999"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "user1",
+      "email": "user1@gmail.com",
+      "password": "123456",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "user2",
+      "email": "user2@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    },
+    {
+      "id": "3",
+      "name": "user3",
+      "email": "user3@gmail.com",
+      "password": "123456",
+      "status": "block"
+    },
+    {
+      "id": "1752813256883",
+      "email": "swayamparikh1@gmail.com",
+      "name": "Sp",
+      "password": "12345",
+      "status": "unblock"
+    },
+    {
+      "id": "1753872169965",
+      "email": "sp@gmail.com",
+      "name": "Swayam Sachinbhai Parikh",
+      "password": "1234",
+      "status": "unblock"
+    },
+    {
+      "id": "1753872708125",
+      "email": "user6@gamil.com",
+      "name": "Swayam Sachinbhai",
+      "password": "12345",
+      "status": "unblock"
+    },
+    {
+      "id": "1753900591595",
+      "email": "rajveesanghavi@gmail.com",
+      "name": "Swayam Sachinbhai",
+      "password": "1234",
+      "status": "unblock"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "name": "admin2",
+      "email": "admin2@gmail.com",
+      "password": "12345"
+    }
+  ]
+}
