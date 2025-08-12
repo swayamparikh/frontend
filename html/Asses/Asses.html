@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Web Designing Assessment Test 5</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<style>
+/* ========= GLOBAL ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  line-height: 1.5;
+}
+header, footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 1rem;
+}
+header h1 {
+  font-size: 1.8rem;
+}
+section {
+  padding: 40px 20px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ========= COMMON CARD STYLES ========= */
+.card {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ========= FLEX LAYOUT ========= */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.flex-item {
+  flex: 1 1 calc(33.333% - 40px);
+  min-width: 250px;
+}
+.red-card {
+  background-color: #b31217;
+  color: #ffffff;
+}
+
+/* ========= GRID LAYOUT ========= */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* ========= HERO SECTION ========= */
+.hero {
+  background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2.5rem;
+}
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #b31217;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.hero button:hover {
+  background: #800c11;
+}
+
+/* ========= CONTACT FORM ========= */
+form {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+}
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+button {
+  background-color: #b31217;
+  color: #ffffff;
+  border: none;
+}
+button:hover {
+  background-color: #800c11;
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 768px) {
+  .flex-item {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+@media (max-width: 480px) {
+  .flex-item {
+    flex: 1 1 100%;
+  }
+}
+</style>
+<script>
+function validateForm(e) {
+  e.preventDefault();
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let message = document.getElementById("message").value.trim();
+  let nameRegex = /^[A-Za-z]{3,6}$/;
+
+  if (!name || !email || !message) {
+    alert("All fields are required!");
+    return false;
+  }
+  if (!nameRegex.test(name)) {
+    alert("Name must be 3-6 letters only, no numbers.");
+    return false;
+  }
+  alert("Form submitted successfully!");
+  return true;
+}
+</script>
+</head>
+<body>
+
+<header>
+  <h1>Education Website</h1>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h2>Welcome to Education</h2>
+  <p>Learn, grow, and achieve your dreams.</p>
+  <button>Get Started</button>
+</section>
+
+<!-- FLEX LAYOUT -->
+<section>
+  <h2>Flexbox Layout</h2>
+  <!-- Red Cards -->
+  <div class="flex-container">
+    <div class="flex-item card red-card">Program 1</div>
+    <div class="flex-item card red-card">Program 2</div>
+    <div class="flex-item card red-card">Program 3</div>
+  </div>
+
+  <!-- White Cards -->
+  <div class="flex-container" style="margin-top:20px;">
+    <div class="flex-item card"><img src="https://via.placeholder.com/300x200"><p>Activity 1</p></div>
+    <div class="flex-item card"><img src="https://via.placeholder.com/300x200"><p>Activity 2</p></div>
+    <div class="flex-item card"><img src="https://via.placeholder.com/300x200"><p>Activity 3</p></div>
+  </div>
+</section>
+
+<!-- GRID LAYOUT -->
+<section>
+  <h2>Grid Layout</h2>
+  <!-- Red Cards -->
+  <div class="grid-container">
+    <div class="card red-card">Program 1</div>
+    <div class="card red-card">Program 2</div>
+    <div class="card red-card">Program 3</div>
+  </div>
+
+  <!-- White Cards -->
+  <div class="grid-container" style="margin-top:20px;">
+    <div class="card"><img src="https://via.placeholder.com/300x200"><p>Activity 1</p></div>
+    <div class="card"><img src="https://via.placeholder.com/300x200"><p>Activity 2</p></div>
+    <div class="card"><img src="https://via.placeholder.com/300x200"><p>Activity 3</p></div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section>
+  <h2>Contact Us</h2>
+  <form onsubmit="validateForm(event)">
+    <input type="text" id="name" placeholder="Name (3-6 letters)" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <textarea id="message" placeholder="Message" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Education Website. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

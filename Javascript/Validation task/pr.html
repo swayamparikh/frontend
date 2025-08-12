@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        span {
+            color: red;
+        }
+
+        input[type="text"]:focus-visible {
+            outline: none;
+        }
+    </style>
+    <script>
+    //     function check_blank() {
+    //         let fname = document.getElementById("fname").value;
+    //         if(fname == null || fname == ""){
+    //              document.getElementById("msg").innerText = "Enter firstname"
+    //                 return false;
+    //         }
+    //          let a = 20,b=10
+    //     let data = (a<b)?true:false
+    //     console.log(data)
+
+    //   for(let i=1;i<=100;i++){
+    //         console.log(i)
+    //         document.write(i,"<br>")
+    //     }
+
+        function chnagedata(){
+            document.getElementById("h1").innerText = "Hello world..!"
+        }
+        function removedata(){
+            document.getElementByI("h1").innerText ="Hiii"
+        }
+ 
+        
+    </script>
+</head>
+<body>
+     <!-- <form action="#">
+        First Name :
+        <input type="text" name="f_name" id="fname" onkeyup="return check_name()">
+        <span id="msg"></span>
+
+        <br><br>
+        <button type="submit" onclick="return check_blank()">Check name</button>
+
+           </form> -->
+           
+    <button onclick="chnagedata()">Change data</button>
+     <button onclick="removedata()">rename data</button>
+             <h1 id="h1" onmouseenter="chnagedata()" onmouseleave="removedata()">hello javscript</h1>
+
+       
+</body>
+</html>

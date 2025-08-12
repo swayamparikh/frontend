@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Slider Layout</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #1c1c1c;
+        color: #fff;
+    }
+
+    header, footer {
+        background-color: #b31217;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    header h1, footer p {
+        margin: 0;
+    }
+
+    /* Slider styles */
+    .slider {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+    }
+    .slides img {
+        width: 100%;
+        border-radius: 0;
+    }
+    .nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 50%;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    /* Dots */
+    .dots {
+        text-align: center;
+        padding: 10px;
+    }
+    .dot {
+        height: 12px;
+        width: 12px;
+        margin: 0 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .active {
+        background-color: #b31217;
+    }
+
+    /* Content section */
+    .content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        .nav-btn {
+            font-size: 16px;
+            padding: 8px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>My Image Slider</h1>
+</header>
+
+<div class="slider">
+    <div class="slides">
+        <img src="https://source.unsplash.com/1200x500/?nature,water" alt="Slide 1">
+        <img src="https://source.unsplash.com/1200x500/?mountains" alt="Slide 2">
+        <img src="https://source.unsplash.com/1200x500/?forest" alt="Slide 3">
+    </div>
+    <button class="nav-btn prev">&#10094;</button>
+    <button class="nav-btn next">&#10095;</button>
+</div>
+
+<div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<div class="content">
+    <h2>Welcome to the Gallery</h2>
+    <p>This is a sample layout with an image slider using free Unsplash images.</p>
+</div>
+
+<footer>
+    <p>© 2025 My Website</p>
+</footer>
+
+<script>
+let slideIndex = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = slides.children.length;
+const dots = document.querySelectorAll('.dot');
+
+function showSlide(index) {
+    if (index >= totalSlides) slideIndex = 0;
+    else if (index < 0) slideIndex = totalSlides - 1;
+    else slideIndex = index;
+
+    slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[slideIndex].classList.add('active');
+}
+
+document.querySelector('.next').addEventListener('click', () => showSlide(slideIndex + 1));
+document.querySelector('.prev').addEventListener('click', () => showSlide(slideIndex - 1));
+dots.forEach((dot, index) => dot.addEventListener('click', () => showSlide(index)));
+
+setInterval(() => showSlide(slideIndex + 1), 3000);
+</script>
+
+</body>
+</html>
